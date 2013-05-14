@@ -1,0 +1,27 @@
+EESchema-DOCLIB  Version 2.0  Date: 5/8/2013 7:55:20 PM
+#
+$CMP IRF740
+D BUZ11, 50V Vds, 30A Id, N-Channel Power MOSFET, TO220
+K N-Channel Power MOSFET
+F http://www.fairchildsemi.com/ds/BU/BUZ11.pdf
+$ENDCMP
+#
+$CMP MJE13005G
+D MJE13005G, 4A Ic, 400V Vce, Silicon Switching Power Transistors NPN, TO220
+K Switching Power Transistor NPN
+F http://www.onsemi.com/pub_link/Collateral/MJE13005-D.PDF
+$ENDCMP
+#
+$CMP MJE13009G
+D MJE13009G, 12A Ic, 400V Vce, Silicon Switching Power Transistors NPN, TO220
+K Switching Power Transistor NPN
+F http://www.onsemi.com/pub_link/Collateral/MJE13009-D.PDF
+$ENDCMP
+#
+$CMP TIP50
+D MJE13007G, 8A Ic, 400V Vce, Silicon Switching Power Transistors NPN, TO220
+K Switching Power Transistor NPN
+F http://www.onsemi.com/pub_link/Collateral/MJE13007-D.PDF
+$ENDCMP
+#
+#End Doc Library

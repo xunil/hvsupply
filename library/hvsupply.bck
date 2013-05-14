@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0  Date: 5/8/2013 7:39:41 PM
+#
+$CMP IRF740
+D BUZ11, 50V Vds, 30A Id, N-Channel Power MOSFET, TO220
+K N-Channel Power MOSFET
+F http://www.fairchildsemi.com/ds/BU/BUZ11.pdf
+$ENDCMP
+#
+#End Doc Library
