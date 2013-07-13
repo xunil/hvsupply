@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 7/6/2013 5:52:48 PM
+EESchema Schematic File Version 2  date 7/6/2013 6:08:41 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -1009,4 +1009,18 @@ Wire Wire Line
 	6350 6000 6350 6050
 Wire Wire Line
 	7100 3350 7100 3400
+Text Label 2350 3050 0    60   ~ 0
+12V_IN
+Text Label 2250 3750 2    60   ~ 0
+HV_IN_HI
+Text Label 2250 4250 2    60   ~ 0
+HV_IN_LO
+Text Label 9250 3200 1    60   ~ 0
+SENSE_V
+Text Label 8500 4600 1    60   ~ 0
+HV_OUT
+Text Label 8400 5500 2    60   ~ 0
+SENSE_I
+Text Label 6750 2800 2    60   ~ 0
+HV_UNREG
 $EndSCHEMATC

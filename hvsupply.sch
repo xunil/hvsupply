@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 7/6/2013 6:08:41 PM
+EESchema Schematic File Version 2  date 7/12/2013 8:46:22 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +37,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Adjustable High Voltage Bench Supply"
-Date "7 jul 2013"
+Date "12 jul 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -211,17 +211,6 @@ F 3 "~" H 6350 5200 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R4
-U 1 1 518B207E
-P 6350 5750
-F 0 "R4" V 6430 5750 40  0000 C CNN
-F 1 "2.37" V 6357 5751 40  0000 C CNN
-F 2 "~" V 6280 5750 30  0000 C CNN
-F 3 "~" H 6350 5750 30  0000 C CNN
-	1    6350 5750
-	1    0    0    -1  
-$EndComp
-$Comp
 L CP1 C1
 U 1 1 518B20BA
 P 4700 4200
@@ -274,17 +263,6 @@ F 1 "GND" H 4700 4480 30  0001 C CNN
 F 2 "" H 4700 4550 60  0000 C CNN
 F 3 "" H 4700 4550 60  0000 C CNN
 	1    4700 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR03
-U 1 1 518B2146
-P 6350 6050
-F 0 "#PWR03" H 6350 6050 30  0001 C CNN
-F 1 "GND" H 6350 5980 30  0001 C CNN
-F 2 "" H 6350 6050 60  0000 C CNN
-F 3 "" H 6350 6050 60  0000 C CNN
-	1    6350 6050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -735,7 +713,7 @@ Connection ~ 6900 3600
 Wire Wire Line
 	5000 2800 7850 2800
 Wire Wire Line
-	6350 5450 6350 5500
+	6350 5450 6350 6050
 Wire Wire Line
 	5900 5500 8600 5500
 Wire Wire Line
@@ -1006,8 +984,6 @@ Wire Wire Line
 	3950 4350 3900 4350
 Connection ~ 3900 4350
 Wire Wire Line
-	6350 6000 6350 6050
-Wire Wire Line
 	7100 3350 7100 3400
 Text Label 2350 3050 0    60   ~ 0
 12V_IN
@@ -1023,4 +999,170 @@ Text Label 8400 5500 2    60   ~ 0
 SENSE_I
 Text Label 6750 2800 2    60   ~ 0
 HV_UNREG
+$Comp
+L MOSFET_N Q?
+U 1 1 51E03006
+P 6450 6250
+F 0 "Q?" H 6460 6420 60  0000 R CNN
+F 1 "MOSFET_N" H 6460 6100 60  0000 R CNN
+F 2 "~" H 6450 6250 60  0000 C CNN
+F 3 "~" H 6450 6250 60  0000 C CNN
+	1    6450 6250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L POT RV?
+U 1 1 51E0301C
+P 7250 6250
+F 0 "RV?" H 7250 6150 50  0000 C CNN
+F 1 "POT" H 7250 6250 50  0000 C CNN
+F 2 "~" H 7250 6250 60  0000 C CNN
+F 3 "~" H 7250 6250 60  0000 C CNN
+	1    7250 6250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 51E03032
+P 6750 5900
+F 0 "R?" V 6830 5900 40  0000 C CNN
+F 1 "R" V 6757 5901 40  0000 C CNN
+F 2 "~" V 6680 5900 30  0000 C CNN
+F 3 "~" H 6750 5900 30  0000 C CNN
+	1    6750 5900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 51E03041
+P 7000 6750
+F 0 "R?" V 7080 6750 40  0000 C CNN
+F 1 "R" V 7007 6751 40  0000 C CNN
+F 2 "~" V 6930 6750 30  0000 C CNN
+F 3 "~" H 7000 6750 30  0000 C CNN
+	1    7000 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L PNP Q?
+U 1 1 51E03050
+P 5000 5200
+F 0 "Q?" H 5000 5050 60  0000 R CNN
+F 1 "PNP" H 5000 5350 60  0000 R CNN
+F 2 "~" H 5000 5200 60  0000 C CNN
+F 3 "~" H 5000 5200 60  0000 C CNN
+	1    5000 5200
+	-1   0    0    1   
+$EndComp
+$Comp
+L LED D?
+U 1 1 51E03064
+P 4900 5800
+F 0 "D?" H 4900 5900 50  0000 C CNN
+F 1 "LED" H 4900 5700 50  0000 C CNN
+F 2 "~" H 4900 5800 60  0000 C CNN
+F 3 "~" H 4900 5800 60  0000 C CNN
+	1    4900 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 51E03073
+P 4900 6350
+F 0 "R?" V 4980 6350 40  0000 C CNN
+F 1 "R" V 4907 6351 40  0000 C CNN
+F 2 "~" V 4830 6350 30  0000 C CNN
+F 3 "~" H 4900 6350 30  0000 C CNN
+	1    4900 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 51E03082
+P 4900 6800
+F 0 "#PWR?" H 4900 6800 30  0001 C CNN
+F 1 "GND" H 4900 6730 30  0001 C CNN
+F 2 "" H 4900 6800 60  0000 C CNN
+F 3 "" H 4900 6800 60  0000 C CNN
+	1    4900 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 51E03091
+P 6350 6700
+F 0 "#PWR?" H 6350 6700 30  0001 C CNN
+F 1 "GND" H 6350 6630 30  0001 C CNN
+F 2 "" H 6350 6700 60  0000 C CNN
+F 3 "" H 6350 6700 60  0000 C CNN
+	1    6350 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 51E030A0
+P 7000 7200
+F 0 "#PWR?" H 7000 7200 30  0001 C CNN
+F 1 "GND" H 7000 7130 30  0001 C CNN
+F 2 "" H 7000 7200 60  0000 C CNN
+F 3 "" H 7000 7200 60  0000 C CNN
+	1    7000 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 51E030AF
+P 4900 4900
+F 0 "#PWR?" H 4900 4850 20  0001 C CNN
+F 1 "+12V" H 4900 5000 30  0000 C CNN
+F 2 "" H 4900 4900 60  0000 C CNN
+F 3 "" H 4900 4900 60  0000 C CNN
+	1    4900 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 4900 4900 5000
+Wire Wire Line
+	5200 5200 5600 5200
+Connection ~ 5600 5200
+Wire Wire Line
+	4900 5400 4900 5600
+Wire Wire Line
+	4900 6000 4900 6100
+Wire Wire Line
+	4900 6600 4900 6800
+Wire Wire Line
+	6350 5900 6500 5900
+Connection ~ 6350 5900
+Wire Wire Line
+	7000 5900 7000 6500
+Connection ~ 7000 6250
+Wire Wire Line
+	6650 6250 7000 6250
+Wire Wire Line
+	7250 6100 7500 6100
+Wire Wire Line
+	7500 5950 7500 6250
+$Comp
+L +12V #PWR?
+U 1 1 51E035F9
+P 7500 5950
+F 0 "#PWR?" H 7500 5900 20  0001 C CNN
+F 1 "+12V" H 7500 6050 30  0000 C CNN
+F 2 "" H 7500 5950 60  0000 C CNN
+F 3 "" H 7500 5950 60  0000 C CNN
+	1    7500 5950
+	1    0    0    -1  
+$EndComp
+Connection ~ 7500 6100
+Wire Wire Line
+	7000 7000 7000 7200
+Wire Wire Line
+	6350 6450 6350 6700
+Text Notes 4700 6400 1    60   ~ 0
+Current Limit Indicator
+Text Notes 6250 6650 1    60   ~ 0
+Current Limit VCR
+Wire Wire Line
+	5600 4350 6350 4350
 $EndSCHEMATC
