@@ -1,2 +1,5 @@
 *.zip
-*bak
+*.bak
+*-bak
+_autosave-.*
+
