@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/xunil/Development/hvsupply/hvsupply.sch)
-    (date "Thu 01 Aug 2013 04:15:44 PM PDT")
+    (date "Thu 01 Aug 2013 07:52:11 PM PDT")
     (tool "eeschema (2013-mar-13)-testing"))
   (components
     (comp (ref Q3)
